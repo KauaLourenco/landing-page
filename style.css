@@ -19,6 +19,7 @@
 
     /* Button and call to action background */
     --button-cta-bg: #3882F6;
+    --dark-button: #2056ad;
 
     /* Paddings */
     --header-hero-left-right: 15rem 
@@ -27,6 +28,8 @@
 html {
     font-size: 62.5%;
     font-family: 'Open Sans', sans-serif;
+
+    scroll-behavior: smooth;
 }
 
 body {
@@ -58,6 +61,12 @@ div.logo {
     font-weight: 800;
 
     margin-right: auto;
+
+    cursor: pointer;
+}
+
+nav a {
+    transition: .3s ease;
 }
 
 nav a,
@@ -65,6 +74,10 @@ nav a,
     color: var(--subtext-color);
     font-size: 1.8rem;
     text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--button-cta-bg);
 }
 
 /* Hero section */
@@ -93,6 +106,12 @@ nav a,
     display: flex;
     flex-direction: column;
     flex: 1 1 25rem;
+
+    transition: transform .5s ease;
+}
+
+.hero-content .text:hover {
+    transform: scale(1.1);
 }
 
 .hero-content h1 {
@@ -115,6 +134,12 @@ nav a,
 
     background-color: var(--button-cta-bg);
     border-radius: 1rem;
+
+    transition: .3s ease;
+}
+
+.hero a:hover {
+    background-color: var(--dark-button);
 }
 
 .hero-content img {
@@ -127,7 +152,7 @@ nav a,
 
 /* More information section */
 
-.more-info {
+#more-info {
     width: 100%;
 
     display: flex;
@@ -168,6 +193,12 @@ h2 {
 
     border: .4rem solid var(--button-cta-bg);
     border-radius: 2rem;
+
+    transition: transform .3s ease;
+}
+
+.info-box img:hover {
+    transform: scale(1.1);
 }
 
 .info-box p {
@@ -178,7 +209,7 @@ h2 {
 
 /* Quote section */
 
-.quote {
+#quote {
     width: 100%;
 
     background-color: var(--subtext-color);
@@ -187,7 +218,7 @@ h2 {
     justify-content: center;
 }
 
-.quote div {
+#quote div {
     width: 60%;
     margin: 12rem 0;
 }
@@ -209,7 +240,7 @@ h2 {
 
 /* Call to action */
 
-.sign-up {
+#sign-up {
     width: 100%;
 
     display: flex;
@@ -260,6 +291,14 @@ h2 {
     background-color: var(--button-cta-bg);
     border: .3rem solid var(--main-text);
     border-radius: 1rem;
+
+    transition: .3s ease;
+}
+
+.cta-box a:hover {
+    background-color: var(--dark-button);
+
+    transform: scale(1.1);
 }
 
 /* Footer */
