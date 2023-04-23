@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,700;0,800;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Hero and footer background, information header text and quote text */
+    --dark-bg-color: #1F2937;
+
+    /* Hero main text and header logo */
+    --main-text: #F9FAF8;
+
+    /* Hero subtext, header link text and quote section background */
+    --subtext-color: #E5E7EB;
+
+    /* Button and call to action background */
+    --button-cta-bg: #3882F6;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+/* Header */
+
+header {
+    padding: 2rem 15rem;
+    background-color: var(--dark-bg-color);
+
+    display: flex;
+    align-items: center;
+}
+
+div.logo {
+    color: var(--main-text);
+    font-size: 2.4rem;
+    font-weight: 800;
+
+    margin-right: auto;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+a {
+    color: var(--subtext-color);
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+/* Hero section */
+
+/* More information section */
+
+/* Quote section */
+
+/* Footer */
