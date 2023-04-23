@@ -59,7 +59,8 @@ div.logo {
     margin-right: auto;
 }
 
-a {
+nav a,
+.hero .text a {
     color: var(--subtext-color);
     font-size: 1.8rem;
     text-decoration: none;
@@ -188,16 +189,75 @@ h2 {
 }
 
 .quote-text {
+    margin-bottom: 1.5rem;
+
     color: var(--dark-bg-color);
-    font-size: 3.6rem;
+    font-size: clamp(2rem, 5vw, 3.6rem);
     font-weight: 800;
     font-style: italic;
 }
 
 .author {
-    font-size: 2.4rem;
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
     font-weight: 700;
     text-align: right;
+}
+
+/* Call to action */
+
+.sign-up {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.cta-box {
+    width: 80%;
+    margin: 12rem 0;
+    padding: 6rem clamp(4rem, 10vw ,12rem);
+
+    background-color: var(--button-cta-bg);
+    border-radius: 1rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cta-text {
+    margin-right: auto;
+    flex: 1 0 20rem;
+}
+
+.cta-box h4 {
+    margin-bottom: .5rem;
+
+    color: var(--main-text);
+    font-size: 2.4rem;
+    font-weight: 800;
+}
+
+.cta-box .subtext {
+    color: var(--subtext-color);
+    font-size: 1.8rem;
+}
+
+.cta-box a {
+    width: fit-content;
+    padding: .5rem 4rem;
+
+    text-decoration: none;
+    color: var(--main-text);
+    font-size: 1.8rem;
+    font-weight: 700;
+    
+    background-color: var(--button-cta-bg);
+    border: .3rem solid var(--main-text);
+    border-radius: 1rem;
+
+    flex: 0 0 fit-content;
 }
 
 /* Footer */
