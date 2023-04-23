@@ -37,6 +37,7 @@ body {
 
 header {
     width: 100%;
+
     background-color: var(--dark-bg-color);
 
     display: flex;
@@ -70,6 +71,7 @@ nav a,
 
 .hero {
     width: 100%;
+
     background-color: var(--dark-bg-color);
 
     display: flex;
@@ -108,15 +110,16 @@ nav a,
     width: max-content;
     margin-top: 1.5rem;
     padding: .8rem 3.5rem;
-    background-color: var(--button-cta-bg);
-
+    
     font-weight: 800;
 
+    background-color: var(--button-cta-bg);
     border-radius: 1rem;
 }
 
 .hero-content img {
     min-height: 25rem;
+
     background-color: var(--subtext-color);
 
     flex: 1 0 27rem;
@@ -177,6 +180,7 @@ h2 {
 
 .quote {
     width: 100%;
+
     background-color: var(--subtext-color);
 
     display: flex;
@@ -198,7 +202,7 @@ h2 {
 }
 
 .author {
-    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
     font-weight: 700;
     text-align: right;
 }
@@ -256,8 +260,18 @@ h2 {
     background-color: var(--button-cta-bg);
     border: .3rem solid var(--main-text);
     border-radius: 1rem;
-
-    flex: 0 0 fit-content;
 }
 
 /* Footer */
+
+footer {
+    width: 100%;
+    padding: 4rem;
+
+    color: var(--subtext-color);
+    font-size: 2rem;
+    
+    background-color: var(--dark-bg-color);
+    display: flex;
+    justify-content: center;
+}
